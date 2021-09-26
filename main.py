@@ -52,24 +52,24 @@ def main():
     print(f"This is the response of the explicit function: \n {dictionary} \n\n")
 
     # positional arguments
-    value = positional_arguments(integer=13, string="13")
-    print(f"This is the response of the positional argument function: \n {value} \n\n")
+    # value = positional_arguments(integer=13, string="13")
+    # print(f"This is the response of the positional argument function: \n {value} \n\n")
     
-    # kwargs let's do it !
-    dict1 = {
-        "name": "christien",
-        "age": 7
-    }
+    # # kwargs let's do it !
+    # dict1 = {
+    #     "name": "christien",
+    #     "age": 7
+    # }
 
-    dict2 = {
-        "name": "john",
-        "NAME": "JOE"
-    }
-    using_kwargs(key = 1, dictionary = dict1)
-    using_kwargs(obj1 = 1, obj2 = 2, obj3 = dict2)
+    # dict2 = {
+    #     "name": "john",
+    #     "NAME": "JOE"
+    # }
+    # using_kwargs(key = 1, dictionary = dict1)
+    # using_kwargs(obj1 = 1, obj2 = 2, obj3 = dict2)
 
-    # unpacking
-    print(f"deconstruction of lists and other elements! \n")
+    # # unpacking
+    # print(f"deconstruction of lists and other elements! \n")
     small_list = [1,23,4]
     list1 = [1,2,3,4,5,6,7,8,9]
     list2 = [2,3,4,5,"string","not number"]
@@ -83,31 +83,31 @@ def main():
     a, b, *__  = list2
     print(a,b)
 
-    # create n lengthed variable
-    variable = [random.random()] * 4
-    print(f"Creating a list of *4 None's {variable}")
+    # # create n lengthed variable
+    # variable = [random.random()] * 4
+    # print(f"Creating a list of *4 None's {variable}")
 
-    # comparing searching in sets to lists
-    temp = ['s']*1000000000
-    temp.extend(['s', 'p', 'a', 'm'])
-    s = set(temp)
-    l = temp
+    # # comparing searching in sets to lists
+    # temp = ['s']*1000000000
+    # temp.extend(['s', 'p', 'a', 'm'])
+    # s = set(temp)
+    # l = temp
 
-    def lookup_set(s):
-        return 'm' in s
+    # def lookup_set(s):
+    #     return 'm' in s
 
-    def lookup_list(l):
-        return 'm' in l
+    # def lookup_list(l):
+    #     return 'm' in l
     
-    start_time = time.time()
-    lookup_set(s)
-    end_time = time.time()
-    print(f"SET TIME {end_time - start_time}")
+    # start_time = time.time()
+    # lookup_set(s)
+    # end_time = time.time()
+    # print(f"SET TIME {end_time - start_time}")
 
-    start_time = time.time()
-    lookup_list(l)
-    end_time = time.time()
-    print(f"LIST TIME {end_time - start_time}")
+    # start_time = time.time()
+    # lookup_list(l)
+    # end_time = time.time()
+    # print(f"LIST TIME {end_time - start_time}")
 
 
 
