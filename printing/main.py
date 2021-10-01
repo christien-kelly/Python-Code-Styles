@@ -32,8 +32,7 @@ def main():
     # %s string
     # %g general number
     # %f float
-
-
+    
     
 if __name__ == '__main__':
     main()
